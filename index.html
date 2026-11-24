@@ -526,7 +526,6 @@
 			<button
 				class="button__popup button"
 				type="button"
-				onclick="window['popup-id'].showModal()"
 				aria-controls="popup-id"
 			>
 				<svg
@@ -554,14 +553,13 @@
 					</svg>
 					<p class="text__popup">Вставьте дискету, чтобы продолжить</p>
 				</div>
-				<form method="dialog">
-          <button
-            class="button__popup-close button"
-            type="submit"
-          >
-            <span class="button__text">ОК</span>
-          </button>
-        </form>
+				<button
+					class="button__popup-close button"
+					type="button"
+					aria-controls="popup-id"
+				>
+					<span class="button__text">ОК</span>
+				</button>
 			</dialog>
 		</main>
 		<script src="scripts/like.js"></script>
