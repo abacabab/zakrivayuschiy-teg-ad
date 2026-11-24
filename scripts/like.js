@@ -39,17 +39,3 @@ function setButtonText(heart, button) {
     );
   }
 }
-
-const popup = document.querySelector('#popup-id');
-const openPopupButton = document.querySelector('.button__popup');
-const closePopupButton = document.querySelector('.button__popup-close');
-
-openPopupButton.addEventListener('click', (event) => {
-    event.preventDefault();
-    popup.showModal();
-});
-
-closePopupButton.addEventListener('click', (event) => {
-    event.preventDefault();
-    popup.close();
-});
