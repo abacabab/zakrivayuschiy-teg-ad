@@ -554,14 +554,14 @@
 					</svg>
 					<p class="text__popup">Вставьте дискету, чтобы продолжить</p>
 				</div>
-				<button
-					class="button__popup-close button"
-					type="button"
-					onclick="window['popup-id'].close()"
-					aria-controls="popup-id"
-				>
-					<span class="button__text">ОК</span>
-				</button>
+				<form method="dialog">
+          <button
+            class="button__popup-close button"
+            type="submit"
+          >
+            <span class="button__text">ОК</span>
+          </button>
+        </form>
 			</dialog>
 		</main>
 		<script src="scripts/like.js"></script>
